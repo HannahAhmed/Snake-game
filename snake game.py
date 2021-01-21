@@ -18,7 +18,7 @@ class Button():
         if mouse_state == 1 and mouse_x < x or mouse_state == 1 and mouse_x > (x + width) or mouse_state == 1 and mouse_y < y or mouse_state == 1 and mouse_y > (y + height):
             return True
 
-    #----Hovering----
+    #Hovering
     def hovering(self,x,y,width,height):
         global mouse_state, mouse_x, mouse_y
         if mouse_state == 0 and mouse_x >= x and mouse_x <= (x + width) and mouse_y >= y and mouse_y <= (y + height):
