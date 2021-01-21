@@ -24,7 +24,7 @@ class Button():
         if mouse_state == 0 and mouse_x >= x and mouse_x <= (x + width) and mouse_y >= y and mouse_y <= (y + height):
             return True
     
-    #----Click Button----
+    #Click Button
     def clickButton(self,x,y,width,height,normalColor,hoverColor,textFont,text,textColor,stateHolding = False,stateVariable = 0,state = 1):
         if not self.clickedIn(x,y,width,height) and not self.hovering(x,y,width,height):
             pygame.draw.rect(screen,normalColor,(x,y,width,height))
