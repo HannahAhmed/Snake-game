@@ -6,7 +6,7 @@ class Button():
     def __init__(self):
         self.textBoxes = {}
     
-    #Clicked In
+    #Clicked I
     def clickedIn(self,x,y,width,height):
         global mouse_state, mouse_x, mouse_y
         if mouse_state == 1 and mouse_x >= x and mouse_x <= (x + width) and mouse_y >= y and mouse_y <= (y + height):
